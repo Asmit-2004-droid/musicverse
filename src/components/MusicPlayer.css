@@ -1,0 +1,91 @@
+.music-player {
+  background: #121212;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(255, 0, 106, 0.3);
+}
+
+.track-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.track-info {
+  flex: 1;
+}
+
+.track-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #ff006a;
+}
+
+.track-info p {
+  margin: 4px 0 0;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-btn,
+.control-btn {
+  background: #ff006a;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.control-btn {
+  background: #333;
+}
+
+.play-btn:hover {
+  background: #e6005e;
+}
+
+.control-btn:hover {
+  background: #444;
+}
+
+.seek-bar {
+  width: 120px;
+  accent-color: #ff006a;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .music-player {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .controls {
+    gap: 15px;
+  }
+
+  .seek-bar {
+    width: 100%;
+  }
+}

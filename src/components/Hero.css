@@ -1,0 +1,32 @@
+.hero {
+  background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #ff006a;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #ccc;
+}
+
+.explore-btn {
+  background: #ff006a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background: #e6005e;
+}
