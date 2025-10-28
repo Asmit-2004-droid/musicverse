@@ -8,6 +8,9 @@ import sample1 from "./assets/sample1.mp3";
 import sample2 from "./assets/sample2.mp3";
 import sample3 from "./assets/sample3.mp3";
 import "./index.css";
+import Displaypage from "./components/Displaypage";
+import Signup from "./components/signup";
+import Login from "./components/Login";
 
 const playlist = [
   {
@@ -32,10 +35,15 @@ const playlist = [
 function App() {
   return (
     <div className="app">
+      <Displaypage />
+      <Signup />
+      <Login />
       <Navbar />
       <Hero />
       <section className="songs-section">
-        <h2>Top Tracks</h2>
+        <a href="#">All</a>
+        <a href="#">Favorite</a>
+        <a href="#">Downloads</a>
         <div className="songs-grid">
           {playlist.map((song, i) => (
             <SongCard key={i} {...song} />

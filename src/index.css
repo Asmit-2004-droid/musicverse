@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: #0d0d0d;
+  background: linear-gradient(to bottom, #7b2ff7, #000000);
 }
 
 .songs-section {
@@ -10,39 +10,22 @@ body {
   padding: 50px 20px;
 }
 
-.songs-section h2 {
-  color: #ff006a;
+.songs-section a {
+  color: #ac01fc;
   margin-bottom: 30px;
+  margin-left: 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.songs-section a:hover {
+  border:2px solid #ac01fc;
+  padding: 5px;
+  border-radius: 25px;
 }
 
 .songs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
-  max-width: 1000px;
   margin: 0 auto;
-}
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-  .hero {
-    padding: 70px 10px;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .songs-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
 }

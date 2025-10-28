@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0a0a0a;
+  background: #7b2ff7;
   padding: 15px 40px;
   color: white;
 }
 
 .logo {
   font-size: 1.8rem;
-  color: #ff006a;
   font-weight: bold;
 }
 
@@ -25,19 +24,5 @@
 }
 
 .nav-links li:hover {
-  color: #ff006a;
-}
-
-.signup-btn {
-  background: #ff006a;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.signup-btn:hover {
-  background: #e6005e;
+  text-decoration: underline;
 }
