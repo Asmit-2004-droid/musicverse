@@ -1,20 +1,18 @@
 .login-container {
-  height: 100vh;
+  height: 485px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #7b2ff7, #000000);
+  background: linear-gradient(to bottom, #7b2ff7, #231042);
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  padding: 20px;
 }
 
 .login-title {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 25px;
 }
 
 .login-form {
@@ -26,7 +24,6 @@
 
 .login-form label {
   font-size: 16px;
-  margin-bottom: 7px;
 }
 
 .login-form input {
@@ -35,7 +32,7 @@
   border-radius: 8px;
   padding: 10px;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 
@@ -48,7 +45,7 @@
   align-self: flex-end;
   font-size: 13px;
   color: #ccc;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -76,7 +73,7 @@
 .signup-text {
   margin-top: 25px;
   font-size: 14px;
-  margin-bottom: 35px;
+  margin-bottom: 65px;
 }
 
 .signup-link {

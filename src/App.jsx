@@ -11,7 +11,9 @@ import "./index.css";
 import Displaypage from "./components/Displaypage";
 import Signup from "./components/signup";
 import Login from "./components/Login";
-
+import Setting from "./components/setting";
+import Profile from "./components/Profile";
+import { FaPowerOff } from "react-icons/fa";
 const playlist = [
   {
     title: "Lost in Echoes",
@@ -41,6 +43,8 @@ function App() {
           <Route path="/Log in" element={<Login/>}></Route>
           <Route path="/Sign up for free" element={<Signup/>}></Route>
           <Route path="/Continue as Guest" element={<Navbar/>}></Route>
+          <Route path="/Setting" element={<Setting/>}></Route>
+          <Route path="/Profile" element={<Profile/>}></Route>
           <Route path="/Listen Now" element={
             <div className="songs-section">
             <div className="songs-links">

@@ -1,0 +1,76 @@
+.profile-container {
+  min-height: 445px;
+  background: linear-gradient(180deg, #7f00ff, #3f0099);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.profile-info {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.profile-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.email {
+  color: #ddd;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.liked-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.liked-section p {
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.liked-section p:hover {
+  opacity: 0.8;
+}

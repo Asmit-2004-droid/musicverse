@@ -26,7 +26,7 @@ import { useNavigate } from 'react-router-dom';
       </form>
 
       <p className="signup-text">
-        Don’t have an account? <br /><br />
+        Don’t have an account? <br />
         <a href="#" className="signup-link" 
         onClick={()=>navigate("/Sign up for free")}
         >Sign up</a>

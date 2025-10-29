@@ -1,19 +1,24 @@
 import React from "react";
 import "./Navbar.css";
-import { FaHome ,FaSearch, FaDownload} from "react-icons/fa";
+import { FaHome ,FaSearch} from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
 import { IoIosSettings } from "react-icons/io";
 import {useNavigate} from "react-router-dom"
 function Navbar() {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="home-container">
     <nav className="navbar">
       <h1 className="logo">MusicVerse</h1>
       <ul className="nav-links">
         <li><FaHome /> Home</li>
         <li><FaSearch /> Discover</li>
-        <li><FaDownload /> Downloads</li>
-        <li><IoIosSettings /> Settings</li>
+        <li><div className="Profile"
+         onClick={()=>navigate("/profile")}
+         > <CgProfile />Profile</div></li>
+        <li><div className="setting"
+        onClick={()=>navigate("/setting")}
+        ><IoIosSettings /> Settings</div></li>
       </ul>
     </nav>
      <section className="hero">
@@ -25,7 +30,7 @@ function Navbar() {
         >Listen Now</button>
       </div>
     </section>
-    </>
+    </div>
   );
 }
 
