@@ -1,6 +1,6 @@
 import React from "react";
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import SongCard from "./components/SongCard";
 import Footer from "./components/Footer";
 import MusicPlayer from "./components/MusicPlayer";
@@ -35,24 +35,32 @@ const playlist = [
 function App() {
   return (
     <div className="app">
-      <Displaypage />
-      <Signup />
-      <Login />
-      <Navbar />
-      <Hero />
-      <section className="songs-section">
-        <a href="#">All</a>
-        <a href="#">Favorite</a>
-        <a href="#">Downloads</a>
-        <div className="songs-grid">
-          {playlist.map((song, i) => (
-            <SongCard key={i} {...song} />
-          ))}
-        </div>
-      </section>
-
-      <MusicPlayer playlist={playlist} />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Displaypage/>}></Route>
+          <Route path="/Log in" element={<Login/>}></Route>
+          <Route path="/Sign up for free" element={<Signup/>}></Route>
+          <Route path="/Continue as Guest" element={<Navbar/>}></Route>
+          <Route path="/Listen Now" element={
+            <div className="songs-section">
+            <div className="songs-links">
+            <a href="#">All</a>
+            <a href="#">Favorite</a>
+            <a href="#">Downloads</a>
+            </div>
+            <div className="songs-grid">
+                {playlist.map((song, i) => (
+                <SongCard key={i} {...song} />
+                ))}
+            </div>
+            <MusicPlayer playlist={playlist} />
+          </div>
+          }
+          >
+          </Route>
+        </Routes>
+      </Router>
+      <Footer/>
     </div>
   );
 }

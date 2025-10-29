@@ -10,7 +10,7 @@ body {
   padding: 50px 20px;
 }
 
-.songs-section a {
+.songs-links a {
   color: #ac01fc;
   margin-bottom: 30px;
   margin-left: 30px;
@@ -18,7 +18,7 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-.songs-section a:hover {
+.songs-links a:hover {
   border:2px solid #ac01fc;
   padding: 5px;
   border-radius: 25px;

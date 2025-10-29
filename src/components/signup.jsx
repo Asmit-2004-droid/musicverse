@@ -3,7 +3,9 @@ import "./signup.css";
 import { IoMusicalNote } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { IoIosPhonePortrait } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
  function Signup() {
+  const navigate =useNavigate();
   return (
     <div className="login-container">
       <div className="music-icon">
@@ -16,11 +18,15 @@ import { IoIosPhonePortrait } from "react-icons/io";
       </button>
 
       <button className="btn guest-btn">
-        <span className="icons"><IoIosPhonePortrait />Continue as Guest</span>
+        <span className="icons" 
+        onClick={()=>navigate("/Continue as Guest")}
+        ><IoIosPhonePortrait />Continue as Guest</span>
       </button>
       <p className="login-text">
         Already have an account ?<br /><br/>
-        <a href="#" className="login-link">Log in</a>
+        <a href="#" className="login-link"
+        onClick={()=>navigate("/Log in")}>
+        Log in</a>
       </p>
     </div>
   );

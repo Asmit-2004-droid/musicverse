@@ -1,7 +1,9 @@
 import React from "react";
 import "./Login.css";
 import { IoMusicalNote } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
  function Login() {
+  const navigate =useNavigate();
   return (
     <div className="login-container">
       <div className="music-icon"><IoMusicalNote /></div>
@@ -18,12 +20,16 @@ import { IoMusicalNote } from "react-icons/io5";
           Forgot Password
         </a>
 
-        <button type="submit" className="login-btn">Log In</button>
+        <button type="submit" className="login-btn"
+        onClick={()=>navigate("/Continue as Guest")}
+        >Log In</button>
       </form>
 
       <p className="signup-text">
         Don’t have an account? <br /><br />
-        <a href="#" className="signup-link">Sign up</a>
+        <a href="#" className="signup-link" 
+        onClick={()=>navigate("/Sign up for free")}
+        >Sign up</a>
       </p>
     </div>
   );
